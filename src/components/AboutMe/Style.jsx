@@ -43,7 +43,7 @@ const SAbout = styled.div`
     align-items: center;
     justify-content: center;
     width: 50vw;
-    height: 85vh;
+    height: 90vh;
     text-align: center;
     border-radius: 50%;
 

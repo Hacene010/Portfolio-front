@@ -50,8 +50,8 @@ const SHeader = styled.div`
   }
 
   nav li:hover {
-    text-decoration: overline underline #000;
-    color: #2a2424;
+    text-decoration: overline underline #fff;
+    color: #b5b8bd;
     transition: 200ms ease-out;
   }
 `;

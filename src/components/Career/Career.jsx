@@ -5,11 +5,6 @@ export default function Career() {
     <SCareer id="career">
       <div className="deco" />
       <div className="container">
-        <img
-          className="borderLeft"
-          src="/img/Welcome/borderLeft.png"
-          alt="border"
-        />
         <div className="title-career">
           <div className="title">
             <a
@@ -78,12 +73,6 @@ export default function Career() {
             </div>
           </div>
         </div>
-
-        <img
-          className="borderRight"
-          src="/img/Welcome/borderRight.png"
-          alt="border"
-        />
       </div>
     </SCareer>
   );

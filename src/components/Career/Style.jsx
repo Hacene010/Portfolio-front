@@ -157,26 +157,6 @@ const SCareer = styled.div`
     font-weight: 500;
     padding: 5px;
   }
-
-  .borderLeft {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .borderRight {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  @media (max-width: 450px) {
-    .borderLeft,
-    .borderRight,
-    a {
-      display: none;
-    }
-  }
 `;
 
 export default SCareer;
