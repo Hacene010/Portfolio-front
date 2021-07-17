@@ -9,8 +9,30 @@ const SCareer = styled.div`
   }
 
   .container {
+    position: relative;
     display: flex;
     height: inherit;
+  }
+
+  .deco {
+    position: absolute;
+    top: 8%;
+    left: 28%;
+    opacity: 0.2;
+    width: 43vw;
+    height: 80vh;
+    border-radius: 50%;
+    background-color: #415164;
+
+    animation-name: bgDeco;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    @keyframes bgDeco {
+      from {
+        margin-top: 100vh;
+        opacity: 0.5;
+      }
+    }
   }
 
   .title-career {
