@@ -24,7 +24,8 @@ const SHeader = styled.div`
       align-items: center;
 
       li {
-        text-decoration: overline underline 0.8px;
+        text-decoration: #000 underline;
+        list-style: none;
         color: rgb(242, 243, 243);
         font-size: 1.4em;
         font-weight: 900;
@@ -49,7 +50,7 @@ const SHeader = styled.div`
   }
 
   nav li:hover {
-    text-decoration: overline underline 0.8px #000;
+    text-decoration: overline underline #000;
     color: #2a2424;
     transition: 200ms ease-out;
   }
