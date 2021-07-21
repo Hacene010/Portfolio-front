@@ -11,27 +11,6 @@ const SCareer = styled.div`
     display: flex;
     height: inherit;
   }
-  /* 
-  .deco {
-    position: absolute;
-    top: 8%;
-    left: 28%;
-    opacity: 0.2;
-    width: 43vw;
-    height: 80vh;
-    border-radius: 50%;
-    background-color: #415164;
-
-    animation-name: bgDeco;
-    animation-duration: 500ms;
-    animation-timing-function: ease-out;
-    @keyframes bgDeco {
-      from {
-        margin-top: 100vh;
-        opacity: 0.5;
-      }
-    }
-  } */
 
   .title-career {
     display: flex;
@@ -51,23 +30,25 @@ const SCareer = styled.div`
 
   .title {
     height: 20vh;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     h1 {
       font-size: 2.5em;
       font-weight: 900;
       text-align: center;
-      padding: 0px;
     }
 
-    a {
-      color: #e4f0f2;
+    img {
+      width: 55px;
     }
   }
   .univ,
   .iesc,
   .wcs {
     width: 30%;
-    height: 100%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,11 +70,11 @@ const SCareer = styled.div`
     h2 {
       font-size: 1.3em;
       font-weight: 600;
-      padding: 8px;
+      padding: 5px;
       text-align: center;
+      color: #9ed0c9;
     }
-    li,
-    h3 {
+    li {
       padding: 8px;
       text-align: justify;
 
@@ -152,6 +133,7 @@ const SCareer = styled.div`
   h3 {
     font-size: 1.15em;
     font-weight: 500;
+    text-align: center;
   }
 `;
 
