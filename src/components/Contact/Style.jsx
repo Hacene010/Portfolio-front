@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const SContact = styled.div`
   .container {
     background-color: #415164;
-    height: 100vh;
+    height: 94vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,9 +15,22 @@ const SContact = styled.div`
     width: 45vw;
     overflow: hidden;
 
+    animation-name: contact;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    @keyframes contact {
+      from {
+        margin-left: -200%;
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
     .pic {
       position: absolute;
-      top: 9vh;
+      top: 10vh;
       right: 3vw;
 
       img {
@@ -40,7 +53,7 @@ const SContact = styled.div`
     }
 
     .sTitles {
-      padding-top: 10vh;
+      padding-top: 5vh;
       height: 60vh;
       padding-left: 5px;
       h2 {
@@ -55,6 +68,12 @@ const SContact = styled.div`
         p {
           padding: 5px;
         }
+      }
+
+      img {
+        opacity: 1;
+        width: 55px;
+        margin: 15px;
       }
     }
   }
