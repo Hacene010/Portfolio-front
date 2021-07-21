@@ -40,7 +40,6 @@ const SHome = styled.div`
       bottom: 7vh;
       height: 55vh;
       border-radius: 60%;
-      opacity: 0.7;
 
       animation-name: myPic;
       animation-duration: 1s;
@@ -89,6 +88,7 @@ const SHome = styled.div`
   }
 
   .pictos {
+    display: flex;
     margin-left: 10%;
     margin-top: 10%;
     img {
@@ -99,6 +99,26 @@ const SHome = styled.div`
 
     img:hover {
       opacity: 0.5;
+    }
+  }
+
+  .cv {
+    position: relative;
+
+    p {
+      position: absolute;
+      left: 25%;
+      display: none;
+    }
+  }
+
+  .cv:hover {
+    img {
+      opacity: 0.3;
+    }
+    p {
+      display: block;
+      font-weight: bold;
     }
   }
 `;

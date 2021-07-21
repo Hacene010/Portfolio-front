@@ -26,13 +26,16 @@ export default function Home() {
             >
               <img src="/img/Home/linkedIn.png" alt="linkedIn" />
             </a>
-            <a
-              href="https://www.canva.com/design/DAEZTuKjWeM/6dg6YYyVBVsNvP9QtE6ZdA/view?utm_content=DAEZTuKjWeM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/img/Home/cv.gif" alt="myCv" />
-            </a>
+            <div className="cv">
+              <p>CV pdf</p>
+              <a
+                href="https://www.canva.com/design/DAEZTuKjWeM/6dg6YYyVBVsNvP9QtE6ZdA/view?utm_content=DAEZTuKjWeM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/img/Home/cv.gif" alt="myCv" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="about">
