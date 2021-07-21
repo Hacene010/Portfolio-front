@@ -15,7 +15,7 @@ const SAchievements = styled.div`
     flex-direction: column;
   }
 
-  /* .deco {
+  .deco {
     position: absolute;
     top: 8%;
     left: 28%;
@@ -23,17 +23,8 @@ const SAchievements = styled.div`
     width: 43vw;
     height: 80vh;
     border-radius: 50%;
-    background-color: #415164;
-
-     animation-name: bgDeco;
-    animation-duration: 500ms;
-    animation-timing-function: ease-out;
-    @keyframes bgDeco {
-      from {
-        margin-top: 100vh;
-      }
-    } 
-  } */
+    background-color: #9ed0c940;
+  }
 
   .projects {
     display: flex;
@@ -47,8 +38,8 @@ const SAchievements = styled.div`
   }
 
   .title {
-    height: 20vh;
-    margin: 30px;
+    height: 15vh;
+    margin-top: 30px;
 
     h1 {
       font-size: 2.5em;
@@ -75,6 +66,19 @@ const SAchievements = styled.div`
     @media (max-width: 450px) {
       width: 100%;
       margin: 10px;
+    }
+
+    animation-name: projects;
+    animation-duration: 1ms;
+    animation-timing-function: ease-out;
+    @keyframes projects {
+      from {
+        opacity: 0;
+      }
+    }
+
+    a {
+      text-decoration: underline #9ed0c9;
     }
 
     li {
@@ -107,78 +111,14 @@ const SAchievements = styled.div`
   }
 
   .github {
-    li {
-      /* animation-name: slideLi;
-      animation-duration: 1s;
-      animation-timing-function: ease-out;
-       @keyframes slideLi {
-        from {
-          margin-top: 100%;
-        }
-        to {
-          margin-top: 0;
-        }
-      } */
-    }
-
-    h2 {
-      /* animation-name: slideTitle;
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out;
-      @keyframes slideTitle {
-        from {
-          margin-left: -200%;
-        }
-      } */
-    }
-
-    /* animation-name: slideGithub;
-    animation-duration: 1s;
+    animation-name: projects;
+    animation-duration: 500ms;
     animation-timing-function: ease-out;
-    @keyframes slideGithub {
+    @keyframes projects {
       from {
         margin-left: -100%;
       }
-      to {
-        margin-left: 0;
-      }
-    } */
-  }
-
-  .spaceflix {
-    li {
-      /* animation-name: slideLi;
-      animation-duration: 700ms;
-      animation-timing-function: ease-out;
-      @keyframes slideLi {
-        from {
-          margin-top: 100%;
-        }
-      } */
     }
-
-    /* h2 {
-      animation-name: slideH2;
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out;
-
-      @keyframes slideH2 {
-        from {
-          margin-right: -200%;
-        }
-      }
-    }
-    animation-name: slideSpace;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    @keyframes slideSpace {
-      from {
-        margin-right: -100%;
-      }
-      to {
-        margin-right: 0;
-      }
-    } */
   }
 
   .edtech {
@@ -187,48 +127,13 @@ const SAchievements = styled.div`
       height: 400px;
       border: 4px #415164 solid;
     }
-
-    /* animation-name: slideEdtech;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-
-    @keyframes slideEdtech {
-      from {
-        margin-top: -200%;
-      }
-      to {
-        margin-top: 0;
-      }
-    } */
-
-    li,
-    h1,
-    a {
-      /* animation-name: slideEdtechLi;
-      animation-duration: 700ms;
-      animation-timing-function: ease-in-out;
-      @keyframes slideEdtechLi {
-        from {
-          margin-top: 300%;
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      } */
-    }
   }
 
   h2 {
     font-size: 1.3em;
     font-weight: 600;
     text-align: center;
-  }
-
-  h3 {
-    font-size: 1.2em;
-    font-weight: 500;
-    padding: 5px;
+    color: #9ed0c9;
   }
 `;
 
