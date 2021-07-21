@@ -3,18 +3,17 @@ import SCareer from './Style';
 export default function Career() {
   return (
     <SCareer id="career">
-      <div className="deco" />
       <div className="container">
         <div className="title-career">
           <div className="title">
+            <h1>Parcours</h1>
             <a
               href="https://www.canva.com/design/DAEZTuKjWeM/6dg6YYyVBVsNvP9QtE6ZdA/view?utm_content=DAEZTuKjWeM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
               target="_blank"
               rel="noreferrer"
             >
-              Version pdf de mon CV
+              <img src="/img/Home/cv.gif" alt="myCv" />
             </a>
-            <h1>Parcours</h1>
           </div>
           <div className="carrer">
             <div className="univ">
