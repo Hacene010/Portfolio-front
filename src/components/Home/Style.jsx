@@ -7,29 +7,6 @@ const SHome = styled.div`
     align-items: center;
     overflow: hidden;
     position: relative;
-
-    .deco {
-      position: absolute;
-      top: -28vh;
-      left: 35vw;
-      opacity: 0.7;
-      background-color: rgb(65, 81, 100);
-      height: 20%;
-      width: 15%;
-      transform: skewY(50deg);
-
-      animation-name: deco;
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out;
-      @keyframes deco {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 0.8;
-        }
-      }
-    }
   }
 
   .about {
@@ -76,6 +53,8 @@ const SHome = styled.div`
     }
   }
   .name {
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     align-self: center;
     width: 50%;
@@ -106,6 +85,20 @@ const SHome = styled.div`
       from {
         font-size: 0.9rem;
       }
+    }
+  }
+
+  .pictos {
+    margin-left: 10%;
+    margin-top: 10%;
+    img {
+      opacity: 1;
+      width: 55px;
+      margin: 15px;
+    }
+
+    img:hover {
+      opacity: 0.5;
     }
   }
 `;
