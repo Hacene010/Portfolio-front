@@ -86,7 +86,7 @@ const SHome = styled.div`
     animation-timing-function: ease-in-out;
     @keyframes myName {
       from {
-        margin-left: 100%;
+        margin-left: -100%;
       }
     }
   }
@@ -98,15 +98,6 @@ const SHome = styled.div`
   }
   h2 {
     font-size: 2em;
-
-    animation-name: title2;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    @keyframes title2 {
-      from {
-        font-size: 0.9rem;
-      }
-    }
   }
 `;
 

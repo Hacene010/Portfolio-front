@@ -3,7 +3,6 @@ import SCareer from './Style';
 export default function Career() {
   return (
     <SCareer id="career">
-      <div className="deco" />
       <div className="container">
         <div className="title-career">
           <div className="title">

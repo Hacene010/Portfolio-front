@@ -4,7 +4,6 @@ export default function Achievements() {
   return (
     <SAchievements>
       <div className="container">
-        <div className="deco" />
         <div className="title-projects">
           <div className="title">
             <h1>Réalisations</h1>
