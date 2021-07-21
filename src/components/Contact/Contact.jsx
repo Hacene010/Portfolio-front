@@ -20,16 +20,14 @@ export default function Contact() {
             <div className="email">
               <p>Email : </p>
               <p className="linkto">hamrounehacene06@gmail.com</p>
-              <p>LinkedIn:</p>
             </div>
             <p>
               <a
-                href="//www.linkedin.com/in/hacenehamroune"
-                className="linkto"
+                href="https://www.linkedin.com/in/hacenehamroune/"
                 target="_blank"
                 rel="noreferrer"
               >
-                www.linkedin.com/in/hacenehamroune
+                <img src="/img/Home/linkedIn.png" alt="linkedIn" />
               </a>
             </p>
 
