@@ -1,30 +1,25 @@
 import styled from 'styled-components';
 
 const SAbout = styled.div`
-  height: 94vh;
-  background-color: #415164;
+  overflow: hidden;
+  height: 93.6vh;
 
   .myPic {
     margin-top: 0;
+    width: 30vw;
 
     img {
       border-radius: 8px;
       height: 90vh;
-    }
+      margin: auto;
 
-    animation-name: pic;
-    animation-duration: 700ms;
-    animation-timing-function: ease-out;
-    @keyframes pic {
-      from {
-        opacity: 0;
-        margin-left: -100%;
-        margin-top: -50%;
-      }
-      to {
-        opacity: 1;
-        margin-left: 0;
-        margin-top: 0;
+      animation-name: pic;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      @keyframes pic {
+        from {
+          height: 90px;
+        }
       }
     }
   }
@@ -38,6 +33,7 @@ const SAbout = styled.div`
 
   .desc-container {
     background-color: #6e7b8b9f;
+    opacity: 0.7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,12 +48,7 @@ const SAbout = styled.div`
     animation-timing-function: ease-in-out;
     @keyframes desc {
       from {
-        margin-top: -50%;
-        margin-right: -100%;
-      }
-      to {
-        margin-top: 0;
-        margin-right: 0;
+        opacity: 0;
       }
     }
   }
@@ -86,11 +77,9 @@ const SAbout = styled.div`
 
     @keyframes title {
       from {
-        opacity: 0.5;
         margin-top: 200%;
       }
       to {
-        opacity: 1;
         margin-top: 0;
       }
     }

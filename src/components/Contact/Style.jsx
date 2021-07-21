@@ -1,35 +1,12 @@
 import styled from 'styled-components';
 
 const SContact = styled.div`
-  .deco {
-    position: absolute;
-    top: 8%;
-    left: 26%;
-    opacity: 0.2;
-    width: 43vw;
-    height: 80vh;
-    border-radius: 50%;
-    background-color: #a5a8ac82;
-
-    animation-name: bgDeco;
-    animation-duration: 500ms;
-    animation-timing-function: ease-out;
-    @keyframes bgDeco {
-      from {
-        margin-top: 100vh;
-        opacity: 0.5;
-      }
-    }
-  }
-
   .container {
     background-color: #415164;
-    overflow: hidden;
     height: 100vh;
     display: flex;
     align-items: center;
-    width: 120vw;
-    position: relative;
+    justify-content: space-around;
   }
 
   .picture {
@@ -39,27 +16,19 @@ const SContact = styled.div`
     overflow: hidden;
 
     .pic {
+      position: absolute;
+      top: 9vh;
+      right: 3vw;
+
       img {
-        position: absolute;
-        top: 15vh;
-        left: 5vw;
         width: 37vw;
         height: 70vh;
         border-radius: 50%;
       }
-      animation-name: pic;
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out;
-      @keyframes pic {
-        from {
-          transform: rotate(180deg);
-        }
-      }
     }
   }
-
   .contact {
-    width: 60vw;
+    width: 40vw;
     height: inherit;
 
     h1 {
@@ -68,14 +37,6 @@ const SContact = styled.div`
       padding: 5px;
       margin-top: 13vh;
       width: 20vw;
-      animation-name: title;
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out;
-      @keyframes title {
-        from {
-          margin-left: 200vw;
-        }
-      }
     }
 
     .sTitles {
@@ -84,24 +45,16 @@ const SContact = styled.div`
       padding-left: 5px;
       h2 {
         font-size: 1.7rem;
+
+        color: #9ed0c9;
       }
 
-      p {
-        animation-name: texts;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        @keyframes texts {
-          from {
-            opacity: 0;
-            margin-top: 100vh;
-          }
-          to {
-          }
+      .email {
+        display: flex;
+
+        p {
+          padding: 5px;
         }
-      }
-
-      .linkto {
-        color: #0303f5;
       }
     }
   }

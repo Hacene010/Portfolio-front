@@ -24,11 +24,13 @@ const SHeader = styled.div`
       align-items: center;
 
       li {
-        text-decoration: #000 underline;
         list-style: none;
         color: rgb(242, 243, 243);
         font-size: 1.4em;
         font-weight: 900;
+      }
+      a {
+        text-decoration: none;
       }
     }
   }
@@ -40,6 +42,7 @@ const SHeader = styled.div`
 
     img {
       width: inherit;
+      border-radius: 40px;
 
       :hover {
         transition: 200ms;
@@ -50,9 +53,10 @@ const SHeader = styled.div`
   }
 
   nav li:hover {
-    text-decoration: overline underline #fff;
+    transition: 0.25s ease-in-out;
     color: #b5b8bd;
-    transition: 200ms ease-out;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
   }
 `;
 export default SHeader;

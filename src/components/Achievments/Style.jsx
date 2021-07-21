@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 const SAchievements = styled.div`
-  color: #2a2424;
-  height: inherit;
   @media (max-width: 450px) {
     height: 100%;
   }
@@ -17,7 +15,7 @@ const SAchievements = styled.div`
     flex-direction: column;
   }
 
-  .deco {
+  /* .deco {
     position: absolute;
     top: 8%;
     left: 28%;
@@ -27,21 +25,22 @@ const SAchievements = styled.div`
     border-radius: 50%;
     background-color: #415164;
 
-    animation-name: bgDeco;
+     animation-name: bgDeco;
     animation-duration: 500ms;
     animation-timing-function: ease-out;
     @keyframes bgDeco {
       from {
         margin-top: 100vh;
       }
-    }
-  }
+    } 
+  } */
 
   .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 10px;
     @media (max-width: 450px) {
       flex-direction: column;
     }
@@ -55,7 +54,6 @@ const SAchievements = styled.div`
       font-size: 2.5em;
       font-weight: 900;
       text-align: center;
-      padding: 60px;
     }
 
     a {
@@ -82,10 +80,9 @@ const SAchievements = styled.div`
     li {
       line-height: 1.3;
       list-style: none;
-      padding-top: 10px;
 
       a {
-        color: #415164;
+        color: #f5f5f5;
 
         :hover {
           color: #2a2424;
@@ -94,14 +91,14 @@ const SAchievements = styled.div`
     }
 
     img {
-      width: 300px;
-      height: 400px;
+      width: 200px;
+      height: 300px;
       margin: 10px;
     }
 
-    span {
+    span li {
       padding: 12px;
-      text-align: center;
+      text-align: justify;
       @media (max-width: 450px) {
         width: 100%;
         padding: 10px;
@@ -111,31 +108,31 @@ const SAchievements = styled.div`
 
   .github {
     li {
-      animation-name: slideLi;
+      /* animation-name: slideLi;
       animation-duration: 1s;
       animation-timing-function: ease-out;
-      @keyframes slideLi {
+       @keyframes slideLi {
         from {
           margin-top: 100%;
         }
         to {
           margin-top: 0;
         }
-      }
+      } */
     }
 
     h2 {
-      animation-name: slideTitle;
+      /* animation-name: slideTitle;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
       @keyframes slideTitle {
         from {
           margin-left: -200%;
         }
-      }
+      } */
     }
 
-    animation-name: slideGithub;
+    /* animation-name: slideGithub;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     @keyframes slideGithub {
@@ -145,22 +142,22 @@ const SAchievements = styled.div`
       to {
         margin-left: 0;
       }
-    }
+    } */
   }
 
   .spaceflix {
     li {
-      animation-name: slideLi;
+      /* animation-name: slideLi;
       animation-duration: 700ms;
       animation-timing-function: ease-out;
       @keyframes slideLi {
         from {
           margin-top: 100%;
         }
-      }
+      } */
     }
 
-    h2 {
+    /* h2 {
       animation-name: slideH2;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
@@ -181,17 +178,17 @@ const SAchievements = styled.div`
       to {
         margin-right: 0;
       }
-    }
+    } */
   }
 
   .edtech {
     img {
-      width: 400px;
-      height: 500px;
+      width: 300px;
+      height: 400px;
       border: 4px #415164 solid;
     }
 
-    animation-name: slideEdtech;
+    /* animation-name: slideEdtech;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
 
@@ -202,12 +199,12 @@ const SAchievements = styled.div`
       to {
         margin-top: 0;
       }
-    }
+    } */
 
     li,
     h1,
     a {
-      animation-name: slideEdtechLi;
+      /* animation-name: slideEdtechLi;
       animation-duration: 700ms;
       animation-timing-function: ease-in-out;
       @keyframes slideEdtechLi {
@@ -218,14 +215,14 @@ const SAchievements = styled.div`
         to {
           opacity: 1;
         }
-      }
+      } */
     }
   }
 
   h2 {
     font-size: 1.3em;
     font-weight: 600;
-    padding: 10px;
+    text-align: center;
   }
 
   h3 {

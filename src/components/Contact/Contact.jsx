@@ -4,7 +4,6 @@ export default function Contact() {
   return (
     <SContact>
       <div className="container">
-        <div className="deco" />
         <div className="picture">
           <div className="pic">
             <img src="/img/Contact/contact.jpeg" alt="contactPic" />
@@ -18,9 +17,11 @@ export default function Contact() {
             <p>Métropole lilloise et environs / Île-de-France</p>
             <br />
             <h2>Contact</h2>
-            <p>Email:</p>
-            <p className="linkto">hamrounehacene06@gmail.com</p>
-            <p>LinkedIn:</p>
+            <div className="email">
+              <p>Email : </p>
+              <p className="linkto">hamrounehacene06@gmail.com</p>
+              <p>LinkedIn:</p>
+            </div>
             <p>
               <a
                 href="//www.linkedin.com/in/hacenehamroune"

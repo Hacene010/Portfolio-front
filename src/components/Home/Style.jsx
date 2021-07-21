@@ -1,17 +1,6 @@
 import styled from 'styled-components';
 
 const SHome = styled.div`
-  .bgdeco {
-    background-color: #415164;
-    opacity: 0.2;
-    position: absolute;
-    top: 23vh;
-    left: 35vw;
-    height: 55vh;
-    width: 30vw;
-    border-radius: 60%;
-  }
-
   .container {
     height: 100vh;
     display: flex;
@@ -52,6 +41,7 @@ const SHome = styled.div`
     .devPic img {
       height: 80vh;
       width: 42vw;
+      opacity: 0.7;
       position: absolute;
       right: -20%;
       top: 5vh;
@@ -62,9 +52,8 @@ const SHome = styled.div`
       animation-timing-function: ease-in-out;
       @keyframes devPic {
         from {
-          margin: 60px;
-          height: 30vh;
-          width: 20vw;
+          margin: 20px;
+          opacity: 0;
         }
       }
     }
@@ -74,16 +63,14 @@ const SHome = styled.div`
       bottom: 7vh;
       height: 55vh;
       border-radius: 60%;
+      opacity: 0.7;
 
       animation-name: myPic;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
       @keyframes myPic {
         from {
-          height: 75vh;
-        }
-        to {
-          height: 55vh;
+          opacity: 0;
         }
       }
     }
@@ -92,25 +79,33 @@ const SHome = styled.div`
     margin: 10px;
     align-self: center;
     width: 50%;
+    padding: 60px;
 
     animation-name: myName;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     @keyframes myName {
       from {
-        transform: rotate(180deg);
+        margin-left: 100%;
       }
     }
+  }
 
-    h1 {
-      font-size: 6.5rem;
-      font-weight: 900;
-      padding: 60px;
-      margin-left: 50px;
-    }
-    h2 {
-      text-align: center;
-      font-size: 2em;
+  h1 {
+    font-size: 6.5rem;
+    font-weight: 900;
+    margin-bottom: 90px;
+  }
+  h2 {
+    font-size: 2em;
+
+    animation-name: title2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    @keyframes title2 {
+      from {
+        font-size: 0.9rem;
+      }
     }
   }
 `;

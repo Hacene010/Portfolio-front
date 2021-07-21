@@ -16,7 +16,7 @@ export default function Header() {
             </Link>
             <Link to="/">
               <div className="logo">
-                <img src="/img/Header/logo.png" alt="logo" />
+                <img src="/img/Header/logo.jpg" alt="logo" />
               </div>
             </Link>
             <Link to="achievments">
