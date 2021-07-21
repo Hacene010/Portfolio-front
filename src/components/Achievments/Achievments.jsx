@@ -19,7 +19,13 @@ export default function Achievements() {
               </div>
 
               <span>
-                <h2>Projet GithubStats.</h2>
+                <a
+                  href="https://github.com/WildCodeSchool/2103-lille-js-p2-g3-github"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <h2>Projet GithubStats.</h2>
+                </a>
 
                 <li>
                   API Github Stats. Application réalisée en 4 semaines en groupe
@@ -30,15 +36,6 @@ export default function Achievements() {
                   technos...
                 </li>
                 <li>Public ciblé : Recruteurs</li>
-                <li>
-                  <a
-                    href="https://github.com/WildCodeSchool/2103-lille-js-p2-g3-github"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Projet GithubStats.
-                  </a>
-                </li>
               </span>
             </div>
 
@@ -66,7 +63,7 @@ export default function Achievements() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    lien vers le repository frontend du projet EdTechHdf
+                    Projet EdTech Hauts-de-France
                   </a>
                 </li>
                 <li>
@@ -78,13 +75,29 @@ export default function Achievements() {
                     lien vers le repository backend du projet EdTechHdf
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://github.com/WildCodeSchool/2103-lille-js-p3-edtech-admin"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    lien vers le repository admin (back-office) du projet
+                    EdTechHdf
+                  </a>
+                </li>
               </span>
             </div>
 
             <div className="spaceflix">
               <img src="/img/Achievments/spaceFlix.png" alt="spaceFlix" />
               <span>
-                <h2>SpaceFlix</h2>
+                <a
+                  href="https://github.com/Hacene010/spaceflix"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <h2>SpaceFlix</h2>
+                </a>
 
                 <li>
                   Hackathon de 36h. Réalisation d&apos;une plateforme
