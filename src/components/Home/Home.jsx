@@ -7,7 +7,9 @@ export default function Home() {
       <div className="container">
         <div className="deco" />
         <div className="name">
-          <h1>HACENE HAMROUNE</h1>
+          <h1>
+            HACENE <br /> HAMROUNE
+          </h1>
           <h2>Développeur Web Junior javaScript</h2>
         </div>
         <div className="about">

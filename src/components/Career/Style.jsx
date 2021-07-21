@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 const SCareer = styled.div`
-  background-color: #fff;
-  color: #415164;
   position: relative;
   @media (max-width: 450px) {
     height: 100%;
@@ -13,7 +11,7 @@ const SCareer = styled.div`
     display: flex;
     height: inherit;
   }
-
+  /* 
   .deco {
     position: absolute;
     top: 8%;
@@ -33,7 +31,7 @@ const SCareer = styled.div`
         opacity: 0.5;
       }
     }
-  }
+  } */
 
   .title-career {
     display: flex;
@@ -44,7 +42,7 @@ const SCareer = styled.div`
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 
     @media (max-width: 450px) {
       flex-direction: column;
@@ -53,7 +51,6 @@ const SCareer = styled.div`
 
   .title {
     height: 20vh;
-    margin: 50px;
 
     h1 {
       font-size: 2.5em;
@@ -63,7 +60,7 @@ const SCareer = styled.div`
     }
 
     a {
-      color: #415164;
+      color: #e4f0f2;
     }
   }
   .univ,
@@ -74,7 +71,7 @@ const SCareer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px;
+    margin: 10px;
     @media (max-width: 450px) {
       width: 100%;
       margin: 10px;
@@ -86,13 +83,19 @@ const SCareer = styled.div`
 
     img {
       border-radius: 8px;
+      height: 300px;
       width: 300px;
-      height: 350px;
-      margin: 10px;
     }
-    span {
-      padding: 12px;
+    h2 {
+      font-size: 1.3em;
+      font-weight: 600;
+      padding: 8px;
       text-align: center;
+    }
+    li,
+    h3 {
+      padding: 8px;
+      text-align: justify;
 
       @media (max-width: 450px) {
         width: 100%;
@@ -107,7 +110,7 @@ const SCareer = styled.div`
     animation-timing-function: ease-out;
     @keyframes slideUniv {
       from {
-        margin-left: -300%;
+        margin-left: -200%;
         opacity: 0;
       }
       to {
@@ -122,7 +125,7 @@ const SCareer = styled.div`
     animation-timing-function: ease-out;
     @keyframes slideIesc {
       from {
-        margin-left: -200%;
+        margin-left: -150%;
         opacity: 0;
       }
       to {
@@ -146,16 +149,9 @@ const SCareer = styled.div`
     }
   }
 
-  h2 {
-    font-size: 1.3em;
-    font-weight: 600;
-    padding: 10px;
-  }
-
   h3 {
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-weight: 500;
-    padding: 5px;
   }
 `;
 
