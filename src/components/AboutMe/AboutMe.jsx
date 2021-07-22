@@ -1,16 +1,32 @@
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import dotenv from 'dotenv';
 import SAbout from './Style';
 
+dotenv.config();
+
 export default function About() {
+  const [texts, setTexts] = useState({});
+  const [images, setImages] = useState({});
+
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_API_URL}/texts`).then(({ data }) => {
+      setTexts(data);
+    });
+    axios.get(`${process.env.REACT_APP_API_URL}/images`).then(({ data }) => {
+      setImages(data);
+    });
+  }, []);
   return (
     <SAbout id="about">
       <div className="container">
         <div className="myPic">
-          <img src="/img/AboutMe/MyPic.jpeg" alt="myPicture" />
+          <img src={images?.myPicture?.src} alt={images?.myPicture?.alt} />
         </div>
 
         <div className="desc-container">
           <div className="title">
-            <h1>Pour en savoir plus sur hacene</h1>
+            <h1>{texts.aboutTile || null}</h1>
           </div>
           <div className="intro">
             <p>
