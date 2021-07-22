@@ -4,7 +4,6 @@ export default function Achievements() {
   return (
     <SAchievements>
       <div className="container">
-        <div className="deco" />
         <div className="title-projects">
           <div className="title">
             <h1>Réalisations</h1>
@@ -47,6 +46,31 @@ export default function Achievements() {
               </div>
               <span>
                 <h2>Projet EdTech Hauts-de-France</h2>
+                <div className="repos">
+                  <a
+                    href="https://github.com/WildCodeSchool/2103-lille-js-p3-edtech-frontend"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <input type="button" value="Frontend" />
+                  </a>
+
+                  <a
+                    href="https://github.com/WildCodeSchool/2103-lille-js-p3-edtech-backend"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <input type="button" value="Backend" />
+                  </a>
+
+                  <a
+                    href="https://github.com/WildCodeSchool/2103-lille-js-p3-edtech-admin"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <input type="button" value="Admin" />
+                  </a>
+                </div>
 
                 <li>
                   Projet pour l&apos;association edTechHdf. Site vitrine de
@@ -56,34 +80,6 @@ export default function Achievements() {
                 <li>
                   Technos et framworks : ReactJs, NodeJs (Express), MySql
                   (workbench)
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/WildCodeSchool/2103-lille-js-p3-edtech-frontend"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Projet EdTech Hauts-de-France
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/WildCodeSchool/2103-lille-js-p3-edtech-backend"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    lien vers le repository backend du projet EdTechHdf
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/WildCodeSchool/2103-lille-js-p3-edtech-admin"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    lien vers le repository admin (back-office) du projet
-                    EdTechHdf
-                  </a>
                 </li>
               </span>
             </div>

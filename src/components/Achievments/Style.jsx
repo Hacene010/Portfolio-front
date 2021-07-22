@@ -15,22 +15,12 @@ const SAchievements = styled.div`
     flex-direction: column;
   }
 
-  .deco {
-    position: absolute;
-    top: 8%;
-    left: 28%;
-    opacity: 0.2;
-    width: 43vw;
-    height: 80vh;
-    border-radius: 50%;
-    background-color: #9ed0c940;
-  }
-
   .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
     margin: 10px;
     @media (max-width: 450px) {
       flex-direction: column;
@@ -63,35 +53,14 @@ const SAchievements = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     @media (max-width: 450px) {
       width: 100%;
       margin: 10px;
     }
 
-    animation-name: projects;
-    animation-duration: 1ms;
-    animation-timing-function: ease-out;
-    @keyframes projects {
-      from {
-        opacity: 0;
-      }
-    }
-
     a {
       text-decoration: underline #9ed0c9;
-    }
-
-    li {
-      line-height: 1.3;
-      list-style: none;
-
-      a {
-        color: #f5f5f5;
-
-        :hover {
-          color: #2a2424;
-        }
-      }
     }
 
     img {
@@ -101,6 +70,8 @@ const SAchievements = styled.div`
     }
 
     span li {
+      line-height: 1.3;
+      list-style: none;
       padding: 12px;
       text-align: justify;
       @media (max-width: 450px) {
@@ -111,10 +82,10 @@ const SAchievements = styled.div`
   }
 
   .github {
-    animation-name: projects;
-    animation-duration: 500ms;
+    animation-name: github;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
-    @keyframes projects {
+    @keyframes github {
       from {
         margin-left: -100%;
       }
@@ -122,10 +93,30 @@ const SAchievements = styled.div`
   }
 
   .edtech {
+    animation-name: edtech;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    @keyframes edtech {
+      from {
+        margin-left: -100%;
+      }
+    }
+
     img {
       width: 300px;
       height: 400px;
       border: 4px #415164 solid;
+    }
+  }
+
+  .spaceflix {
+    animation-name: spaceflix;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    @keyframes spaceflix {
+      from {
+        margin-left: -300%;
+      }
     }
   }
 
@@ -134,6 +125,27 @@ const SAchievements = styled.div`
     font-weight: 600;
     text-align: center;
     color: #9ed0c9;
+  }
+
+  .repos {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    input {
+      background-color: #82afa9;
+      border: 1px #9ed0c9 solid;
+      width: 5vw;
+      color: #26313f;
+      cursor: pointer;
+      margin: 8px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    input:hover {
+      opacity: 0.8;
+    }
   }
 `;
 
