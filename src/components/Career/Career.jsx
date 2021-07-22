@@ -1,17 +1,22 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import SCareer from './Style';
 
 export default function Career() {
+  const [links, setLinks] = useState({});
+
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_API_URL}/links`).then(({ data }) => {
+      setLinks(data);
+    });
+  }, []);
   return (
     <SCareer id="career">
       <div className="container">
         <div className="title-career">
           <div className="title">
             <h1>Parcours</h1>
-            <a
-              href="https://www.canva.com/design/DAEZTuKjWeM/6dg6YYyVBVsNvP9QtE6ZdA/view?utm_content=DAEZTuKjWeM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={links?.cv} target="_blank" rel="noreferrer">
               <img src="/img/Home/cv.gif" alt="myCv" />
             </a>
           </div>
